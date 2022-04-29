@@ -17,7 +17,7 @@ jobs:
         run: |
           git clone https://github.com/anantkaul/LethalWeapon.git old
           git clone https://github.com/vmwaresecurity/LethalWeapon.git new
-          diff -r old new > diff.txt
+          diff -r old new > diff.txt || true
           pwd
 
       - name: Send mail
