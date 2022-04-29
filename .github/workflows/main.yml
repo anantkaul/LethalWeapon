@@ -19,7 +19,7 @@ jobs:
           git clone https://github.com/vmwaresecurity/LethalWeapon.git new
           pwd
           diff -r old new > /opt/diff.txt
-          set -x
+          exit
 
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
